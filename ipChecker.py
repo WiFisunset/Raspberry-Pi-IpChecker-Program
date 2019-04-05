@@ -5,7 +5,6 @@ import os
 import smtplib
 
 # This finds and define's the IP Address that Dynamically will change every so often.
-gw = os.popen("ip -4 route show default").read().split()
 s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 s.connect((gw[2], 0))
 ipaddrDynamic = s.getsockname()[0]
