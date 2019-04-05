@@ -80,4 +80,4 @@ try:
 except KeyboardInterrupt:
     pass
 finally:
-    print("Program Finally Done.")
+    print("Program Has Terminated.")
